@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accessible Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Navigation with ARIA role -->
+  <nav role="navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Heading with ARIA role -->
+  <h1 role="heading">Anuj Kashyap - Web Developer</h1>
+
+  <!-- Image with ARIA role and alt attribute -->
+  <img role="img" src="profile.jpg" alt="Photo of Anuj Kashyap smiling" />
+
+  <!-- Brief Description -->
+  <p id="about">
+    Hello! I'm Anuj, a passionate MERN stack developer focused on creating accessible, user-friendly web applications. I love writing clean code and solving real-world problems.
+  </p>
+
+  <!-- List of Skills or Interests with ARIA roles -->
+  <section id="projects">
+    <h2 role="heading">My Skills</h2>
+    <ul role="list">
+      <li role="listitem">JavaScript & React.js</li>
+      <li role="listitem">Node.js & Express</li>
+      <li role="listitem">MongoDB & REST APIs</li>
+    </ul>
+  </section>
 
 </body>
-
 </html>
